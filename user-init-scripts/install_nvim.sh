@@ -1,9 +1,5 @@
-#!/bin/bash 
-
 set +x
 set +e
-
-source ~/.bashrc
 
 # install nvim with AstroNvim config
 # --- The commented out lines below were
@@ -21,10 +17,7 @@ source ~/.bashrc
 # PATH="~/.local/share/bob/nvim-bin/:$PATH"
 # cargo install bob-nvim
 # bob use latest
-pixi global install nvim
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-source ~/.bashrc
-nvm install node && nvm use node
+pixi global install nvim nodejs git
 
 cargo install ripgrep
 cargo install bottom

@@ -1,9 +1,5 @@
-#!/bin/bash
-
 set +x
 set +e
-
-source ~/.bashrc
 
 # install go
 pixi global install go

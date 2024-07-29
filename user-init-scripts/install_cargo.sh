@@ -1,9 +1,5 @@
-#!/bin/bash
-
 set +x
 set +e
-
-source ~/.bashrc
 
 # install cargo
 pixi global install rust
