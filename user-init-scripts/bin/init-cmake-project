@@ -1,0 +1,9 @@
+#!/bin/bash
+
+project_dir="./$1"
+
+mkdir -p $project_dir
+
+if [ ! -f $project_dir/pixi.toml ]; then
+  cp /etc/pixi-manifests/cmake-project/pixi.toml $project_dir 
+fi
