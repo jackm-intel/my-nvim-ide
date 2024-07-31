@@ -9,4 +9,5 @@ rm install_omf.fish
 fish -c "omf install bass"
 mkdir -p ~/.config/fish/completions/
 pixi completion --shell fish | tee ~/.config/fish/completions/pixi.fish
-cp /etc/user-init-scripts/config.fish ~/.config/fish/config.fish 
+cp /etc/user-init-scripts/config.fish ~/.config/fish/config.fish
+sudo ln -s $(which fish) /usr/bin
