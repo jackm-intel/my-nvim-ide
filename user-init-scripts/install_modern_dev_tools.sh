@@ -1,7 +1,8 @@
 set +x
 set +e
 
-mkdir -p /etc/pixi-manifests/cmake-project
+sudo mkdir -p /etc/pixi-manifests/cmake-project
+sudo chown -R $USER:$USER /etc/pixi-manifests
 cd /etc/pixi-manifests/cmake-project
 pixi init
 pixi add --no-lockfile-update cmake clang-format cmake-format clang-tools ninja make clangdev compilers
