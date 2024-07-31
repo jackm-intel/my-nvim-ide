@@ -7,4 +7,4 @@ cd /etc/pixi-manifests/cmake-project
 pixi init
 pixi add --no-lockfile-update cmake clang-format cmake-format clang-tools ninja make clangdev compilers
 
-pixi global install cmake clang-format cmake-format clang-tools ninja gcc make clangxx clang unzip
+pixi global install cmake clang-format cmake-format clang-tools ninja gcc gxx binutils make clangxx clang unzip
